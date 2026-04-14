@@ -62,13 +62,15 @@ async def roast_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 if __name__ == '__main__':
     if not TELEGRAM_TOKEN or not GROQ_API_KEY:
-        print("Error: TELEGRAM_TOKEN or GROQ_API_KEY not found in environment variables.")
+        print("Error: Missing Environment Variables!")
     else:
+        # Build the application
         application = ApplicationBuilder().token(TELEGRAM_TOKEN).build()
         
-        # Add handler for all text messages
-        roast_handler_instance = MessageHandler(filters.TEXT & (~filters.COMMAND), roast_handler)
-        application.add_handler(roast_handler_instance)
+        # Add the roast handler
+        application.add_handler(MessageHandler(filters.TEXT & (~filters.COMMAND), roast_handler))
         
-        print("Bot is roasting...")
-        application.run_polling()
+        print("Bot is starting... Use Ctrl+C to stop.")
+        
+        # Run the bot
+        application.run_polling(drop_pending_updates=True)
