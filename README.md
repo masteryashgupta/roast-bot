@@ -1,20 +1,11 @@
-# Savage Roast Telegram Bot
+# Savage Zyrex V2 (MongoDB Edition)
 
-A Telegram bot that roasts users in Hindi/English using Llama 3 via Groq.
+### Setup Checklist:
+1. **GitHub**: Upload these files to your repo.
+2. **MongoDB**: Get your `MONGO_URI` from MongoDB Atlas.
+3. **Telegram**: Get `TELEGRAM_TOKEN` from @BotFather and your `ADMIN_ID` from @userinfobot.
+4. **Groq**: Get `GROQ_API_KEY` from console.groq.com.
+5. **Railway**: Set the 4 variables above in the 'Variables' tab.
 
-## Deployment Instructions
-
-### 1. Get API Keys
-- **Telegram:** Create a bot via @BotFather and get the token.
-- **AI Brain:** Go to [Groq Cloud](https://console.groq.com/) and create a free API Key.
-
-### 2. GitHub Upload
-- Create a new repository on GitHub.
-- Upload these files (`main.py`, `requirements.txt`, `Procfile`).
-
-### 3. Railway Deployment
-- Connect your GitHub repo to Railway.app.
-- In the **Variables** tab, add:
-  - `TELEGRAM_TOKEN`: (Your Bot Token)
-  - `GROQ_API_KEY`: (Your Groq API Key)
-- Railway will automatically detect the `requirements.txt` and `Procfile` and start the bot.
+### Admin Command:
+- `/stats` - Only works for the ID specified in `ADMIN_ID`.
