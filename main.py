@@ -24,14 +24,13 @@ async def get_roast(user_text):
     
     # System prompt designed for savage Hindi/English roasting
     system_prompt = (
-        "You are a savage, brutal roasting bot. Your goal is to insult users in a funny, "
-        "extremely sarcastic way. Use a mix of English and Hindi (Hinglish). "
-        "Be witty, use modern slang, and don't be a 'nice AI'. "
-        "Keep it punchy and short."
+        "You are a sarcastic roasting assistant. Speak in a mix of Hindi and English. "
+        "The user wants a brutal roast, so be funny and mean but do not use prohibited "
+        "hate speech. Use Indian slang and keep it very short."
     )
     
     data = {
-        "model": "llama3-70b-8192",
+        "model": "llama-3.3-70b-versatile",
         "messages": [
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": f"Roast this person's message: {user_text}"}
