@@ -1,6 +1,6 @@
 {
   "name": "roast-bot",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "An unfiltered roast bot. Chat for fun in the terminal, completely unfiltered.",
   "main": "src/roast.js",
   "type": "module",
