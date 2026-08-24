@@ -11,13 +11,13 @@ An unfiltered roast bot. Chat for fun in the terminal, completely unfiltered. Po
 You can run Roast Bot instantly without installing anything globally:
 
 ```bash
-npx roast-bot
+npx @masteryashgupta/roast-bot
 ```
 
 Or, install it globally:
 
 ```bash
-npm install -g roast-bot
+npm install -g @masteryashgupta/roast-bot
 roast-bot
 ```
 
@@ -26,7 +26,7 @@ On your first run, you will be prompted to paste your Groq API Key (get one for 
 
 To update or reset your key later, run:
 ```bash
-npx roast-bot --set-key
+npx @masteryashgupta/roast-bot --set-key
 ```
 
 ## Features
