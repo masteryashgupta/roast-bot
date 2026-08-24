@@ -5,7 +5,7 @@
   "main": "src/roast.js",
   "type": "module",
   "bin": {
-    "roast-bot": "./bin/roast-bot.js"
+    "roast-bot": "bin/roast-bot.js"
   },
   "scripts": {
     "start": "node ./bin/roast-bot.js"
