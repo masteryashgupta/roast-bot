@@ -1,0 +1,27 @@
+{
+  "name": "roast-bot",
+  "version": "1.0.0",
+  "description": "An unfiltered roast bot. Chat for fun in the terminal, completely unfiltered.",
+  "main": "src/roast.js",
+  "type": "module",
+  "bin": {
+    "roast-bot": "./bin/roast-bot.js"
+  },
+  "scripts": {
+    "start": "node ./bin/roast-bot.js"
+  },
+  "keywords": [
+    "cli",
+    "groq",
+    "roast-bot",
+    "ai",
+    "terminal",
+    "hinglish",
+    "chatbot"
+  ],
+  "author": "Yash Gupta",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
